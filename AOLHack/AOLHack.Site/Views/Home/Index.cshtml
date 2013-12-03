@@ -11,18 +11,24 @@
 
 	// Using default configuration
     $("#foo").carouFredSel({
-        circular: false,
-        infinite: false,
+        circular: true,
+        infinite: true,
         items: null,
         direction           : "right",
         scroll : {
-        items           : 1,
-        easing          : "elastic",
-        duration        : 500,                        
+            items: 1,
+            fx: "scroll",
+        easing:         "linear",
+        duration        : 1000,                        
         pauseOnHover    : false
+        },
+        auto: {
+            play: false
+        },
+        swipe: {
+            onTouch: true,
+            onMouse: true,
         }
-        swipe : {
-    }
     });
 });</script>
 <h2>@ViewBag.Title</h2>
