@@ -13,10 +13,10 @@ namespace AOLHack.Domain
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class HackModelContainer : DbContext
+    public partial class AOLHackEntities : DbContext
     {
-        public HackModelContainer()
-            : base("name=HackModelContainer")
+        public AOLHackEntities()
+            : base("name=AOLHackEntities")
         {
         }
     
@@ -25,6 +25,8 @@ namespace AOLHack.Domain
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Users> Users1 { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<VideoFeedback> VideoFeedbacks { get; set; }
     }
 }

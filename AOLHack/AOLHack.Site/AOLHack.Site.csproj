@@ -127,11 +127,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Code\ActiveLocation.cs" />
+    <Compile Include="Code\VideoSuggestion.cs" />
+    <Compile Include="Code\Viewer.cs" />
     <Compile Include="Controllers\ManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\StateAgent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\AOLHack.sdf" />
@@ -224,6 +228,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Content Include="Views\Management\Index.cshtml" />
+    <Content Include="Views\Management\ListLocations.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -233,6 +238,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AOLHack.Domain\AOLHack.Domain.csproj">
+      <Project>{8cdc1663-4dab-4c73-a5c1-00e7787be4f3}</Project>
+      <Name>AOLHack.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

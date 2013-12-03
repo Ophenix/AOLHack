@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "ListLocations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListLocations</h2>
+@foreach (AOLHack.Domain.Location location in Model)
+{
+    <p>@location.Title</p>
+}
