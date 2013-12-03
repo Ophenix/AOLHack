@@ -14,14 +14,23 @@ namespace AOLHack.Site
 
     public class MvcApplication : System.Web.HttpApplication
     {
+
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            RouteTable.Routes.MapRoute(
+                "Home",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
+            );
         }
     }
 }
