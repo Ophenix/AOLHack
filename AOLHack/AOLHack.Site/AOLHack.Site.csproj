@@ -128,9 +128,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Code\ActiveLocation.cs" />
-    <Compile Include="Code\VideoSuggestion.cs" />
+    <Compile Include="Code\Video.cs" />
     <Compile Include="Code\Viewer.cs" />
     <Compile Include="Controllers\ManagementController.cs" />
+    <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,6 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Views\View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
