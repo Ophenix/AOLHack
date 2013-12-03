@@ -10,6 +10,7 @@ namespace AOLHack.Site
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.touchSwipe.min.js",
                         "~/Scripts/jquery.carouFredSel-6.2.1-packed.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
